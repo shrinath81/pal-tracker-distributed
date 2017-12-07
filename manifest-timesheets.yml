@@ -1,10 +1,10 @@
 applications:
 - name: tracker-timesheets
   path: ./applications/timesheets-server/build/libs/timesheets-server.jar
-  host: timesheets-pal-INITIALS
+  host: timesheets-pal-sv
   memory: 1G
   instances: 1
   env:
-    REGISTRATION_SERVER_ENDPOINT: http://registration-pal-sv.apps.system.cumuluslabs.io
+    REGISTRATION_SERVER_ENDPOINT: http://registration-pal-sv.apps.cumuluslabs.io
   services:
   - tracker-timesheets-database

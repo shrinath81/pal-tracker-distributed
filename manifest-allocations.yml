@@ -1,10 +1,10 @@
 applications:
 - name: tracker-allocations
   path: ./applications/allocations-server/build/libs/allocations-server.jar
-  host: allocations-pal-INITIALS
+  host: allocations-pal-sv
   memory: 1G
   instances: 1
   env:
-    REGISTRATION_SERVER_ENDPOINT: http://registration-pal-sv.apps.system.cumuluslabs.io
+    REGISTRATION_SERVER_ENDPOINT: http://registration-pal-sv.apps.cumuluslabs.io
   services:
   - tracker-allocations-database
