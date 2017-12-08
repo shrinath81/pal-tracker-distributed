@@ -1,0 +1,6 @@
+https://registration-pal-sv.apps.cumuluslabs.io/users/7
+https://registration-pal-sv.apps.cumuluslabs.io/accounts?ownerId=7
+https://registration-pal-sv.apps.cumuluslabs.io/projects?accountId=7
+https://allocations-pal-sv.apps.cumuluslabs.io/allocations?projectId=10
+https://backlog-pal-sv.apps.cumuluslabs.io/stories?projectId=10
+https://timesheets-pal-sv.apps.cumuluslabs.io/time-entries?userId=7
