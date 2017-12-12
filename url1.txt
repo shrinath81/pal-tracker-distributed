@@ -1,0 +1,11 @@
+https://registration-pal-sv.apps.cumuluslabs.io/users/7
+https://registration-pal-sv.apps.cumuluslabs.io/accounts?ownerId=7
+https://registration-pal-sv.apps.cumuluslabs.io/projects?accountId=7
+https://allocations-pal-sv.apps.cumuluslabs.io/allocations?projectId=10
+https://backlog-pal-sv.apps.cumuluslabs.io/stories?projectId=10
+https://timesheets-pal-sv.apps.cumuluslabs.io/time-entries?userId=7
+
+
+
+siege -c2 -t60S --content-type "application/json" 'http://allocations-pal-sv.apps.cumuluslabs.io/allocations/ POST {"projectId": 34, "userId": 7, "firstDay": "2015-05-17", "lastDay": "2015-05-18"}'
+curl -i -XPOST -H"Content-Type: application/json" allocations-pal-sv.apps.cumuluslabs.io/allocations/ -d'{"projectId": 34, "userId": 7, "firstDay": "2015-05-17", "lastDay": "2015-05-18"}'

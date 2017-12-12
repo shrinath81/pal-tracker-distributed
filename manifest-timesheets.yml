@@ -4,9 +4,15 @@ applications:
   host: timesheets-pal-sv
   memory: 1G
   instances: 1
-#  env:
+  env:
 #    REGISTRATION_SERVER_ENDPOINT: http://registration-pal-sv.apps.cumuluslabs.io
+    GRANT_TYPE: client_credentials
+    SECURITY_USER_NAME: actuator
+    SECURITY_USER_PASSWORD: operations4red
+
+
   services:
+  - tracker-sso
   - tracker-timesheets-database
   - tracker-service-registry
   - tracker-circuit-breaker-dashboard
